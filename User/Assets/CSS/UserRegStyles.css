@@ -1,0 +1,108 @@
+/* Reset and body background */
+
+* {
+   box-sizing: border-box;
+   font-family: sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url(../../../Admin/Assets/Images/user_reg_bg.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* Container */
+
+.container {
+   padding: 40px 60px;
+   width: 40%;
+   background-color: #ffffff;
+   box-shadow: 8px 8px 43px -7px rgba(0, 0, 0, 0.71);
+   -webkit-box-shadow: 8px 8px 43px -7px rgba(0, 0, 0, 0.71);
+   -moz-box-shadow: 8px 8px 43px -7px rgba(0, 0, 0, 0.71);
+}
+
+/* Heading */
+
+.heading {
+   font-size: 4em;
+   margin-bottom: 50px;
+   font-family: monospace;
+   font-weight: 800;
+   background: rgb(24, 167, 196);
+   background: linear-gradient(90deg, rgba(24, 167, 196, 1) 0%, rgba(38, 203, 104, 1) 100%);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+/* Inputs */
+
+input {
+   width: 100%;
+   height: 40px;
+   padding-left: 7px;
+   margin-bottom: 20px;
+   border-left: none;
+   border-right: none;
+   border-top: none;
+   border-bottom: 2px solid rgb(45, 190, 45);
+   font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+input::placeholder {
+   font-size: 1.3em;
+   font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+/* Question div */
+
+.ask_signin {
+   font-size: 1.5em;
+   font-family: 'Fira Sans Condensed', sans-serif;
+   margin-bottom: 20px;
+}
+
+.ask_signin a {
+   text-decoration: none;
+   font-family: 'Fira Sans Condensed', sans-serif;
+   color: rgb(6, 127, 175);
+}
+
+/* Submit button */
+
+.submit_btn {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.submit {
+   cursor: pointer;
+   padding: 20px;
+   color: white;
+   border: none;
+   font-size: 1.4em;
+   background: rgb(24, 167, 196);
+   background: linear-gradient(90deg, rgb(21, 138, 162) 0%, rgba(38, 203, 104, 1) 100%);
+   border-radius: 10px;
+   margin-bottom: 20px;
+}
+
+/* Message */
+
+#msg {
+   width: 100%;
+   padding: 7px 0;
+   border: 2px solid rgb(237, 99, 40);
+   font-size: 1.3em;
+
+}

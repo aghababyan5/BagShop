@@ -1,0 +1,298 @@
+* {
+   box-sizing: border-box;
+   font-family: sans-serif;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+body {
+   background-image: url(../Images/products-bg.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+/* Header background container */
+
+.header_container {
+   width: 100%;
+   padding: 45px;
+}
+
+/* Header */
+
+header {
+   z-index: 999;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 26px 3%;
+   background-color: rgba(37, 37, 37, 0.7);
+}
+
+.dropdown li a {
+   background-color: rgba(37, 37, 37, 0.7);
+}
+
+/* Logo */
+
+.logo {
+   font-weight: bold;
+   font-size: 1.7em;
+}
+
+#header_logo_left {
+   color: #A09C9C;
+}
+
+#header_logo_right {
+   color: #fff;
+}
+
+/* Header navbar */
+
+.navbar_ul {
+   display: flex;
+   align-items: center;
+}
+
+.navbar {
+   color: #A09C9C;
+   transition: .2s;
+}
+
+.navbar:hover {
+   color: #fff;
+}
+
+.menu_bar {
+   position: relative;
+   display: flex;
+   margin-right: 50px;
+}
+
+.menu_bar a {
+   padding: 37px 0;
+}
+
+.menu_bar li {
+   margin: 0 30px;
+}
+
+/* Header registration buttons */
+
+.fa-user {
+   font-size: 2.4em !important;
+   color: #A09C9C;
+   transition: all .2s ease;
+   cursor: pointer;
+}
+
+.fa-user:hover {
+   color: #fff;
+}
+
+#signin {
+   padding-left: 41px;
+   padding-right: 41px;
+}
+
+.reg {
+   color: #fff;
+   padding: 10px;
+   border: 2px solid white;
+   border-radius: 7px;
+}
+
+#logout {
+   padding-left: 40px;
+   padding-right: 40px;
+}
+
+.reg_ul {
+   display: none;
+   position: absolute;
+   top: 106px;
+   right: 16px;
+}
+
+.reg_ul li:not(:first-child) {
+   margin-top: 30px;
+}
+
+.reg:hover {
+   background-color: white;
+   color: black;
+}
+
+/* Dropdown menu */
+
+#categories:hover .dropdown {
+   display: block;
+}
+
+.dropdown {
+   display: none;
+   position: absolute;
+   left: 80px;
+   top: 54px;
+   animation: growDown 300ms ease-in-out forwards;
+   transform-origin: top center;
+}
+
+@keyframes growDown {
+   0% {
+      transform: scaleY(0)
+   }
+
+   80% {
+      transform: scaleY(1.1)
+   }
+
+   100% {
+      transform: scaleY(1)
+   }
+}
+
+.dropdown a {
+   display: block;
+   transition: .3s;
+   padding: 15px;
+   background-color: rgba(0, 0, 0, .8);
+   color: #A09C9C;
+   text-align: center;
+}
+
+.dropdown a:hover {
+   color: white;
+}
+
+/* MAIN */
+
+.main {
+   width: 100%;
+}
+
+/* Heading */
+
+.heading {
+   font-size: 3em;
+   color: white;
+   margin: 15px 0;
+}
+
+.line_div {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.line_hr {
+   width: 50%;
+   border: 2px solid white;
+   margin: 25px 0;
+}
+
+/* Products block container */
+
+.products_block_container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 50%;
+   margin: 0 auto 20px;
+   padding: 15px;
+   border-radius: 7px;
+   padding-bottom: 27px;
+}
+
+.products_block_container:not(:last-child) {
+   border-bottom: 2px dashed white;
+}
+
+.product_img {
+   width: 445px;
+   height: 445px;
+}
+
+.product_content_container {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   color: white;
+   font-size: 1.4em;
+}
+
+.product_desc {
+   width: 55%;
+}
+
+.product_desc,
+.product_to_card {
+   margin-top: 20px;
+}
+
+.prod_heading {
+   font-weight: 400;
+   font-size: 0.9em;
+   margin-top: 18px;
+   color: #A09C9C;
+}
+
+.prod_price_container {
+   display: flex;
+   justify-content: flex-end;
+   font-size: 1.5em;
+}
+
+.about_prod_heading,
+.return_heading {
+   margin-top: 60px;
+}
+
+.vendor_code {
+   border-bottom: 1px solid white;
+   padding-bottom: 10px;
+}
+
+.prod_info {
+   font-size: 0.7em;
+   margin-top: 18px;
+   line-height: 25px;
+}
+
+.btn_add_to_card {
+   padding: 7px 60px;
+   color: red;
+   background-color: #ffffff;
+   border-radius: 2px;
+   border: none;
+   transition: .2s;
+   cursor: pointer;
+   font-size: 0.8em;
+   margin-top: 34px;
+}
+
+.btn_add_to_card:hover {
+   background-color: rgb(204, 66, 66);
+   color: white;
+}
+
+/* Footer */
+
+.footer {
+   background-color: rgba(37, 37, 37, 0.7) !important;
+}
+
+/* Media */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}

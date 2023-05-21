@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style-type: none;
+}
+
+body {
+   background-color: #f3f5f9;
+   height: 100%;
+}
+
+/* Message */
+
+.msg {
+   display: inline-block;
+   border: 2px solid red;
+   padding: 6px;
+   font-family: sans-serif;
+   font-size: 1.3em;
+}
+
+/* Content */
+
+.content {
+   display: flex;
+}
+
+/* Title */
+
+.heading_container {
+   width: 100%;
+   text-align: center;
+   padding: 10px 0;
+   text-transform: uppercase;
+   background-color: #98D453;
+   font-family: 'Edu NSW ACT Foundation', cursive;
+   color: white;
+   font-size: 2.3em;
+}
+
+/* Navbar */
+
+.nav_container {
+   min-width: 250px;
+   height: calc(100vh - 122px);
+   padding: 10px 8px;
+   background-color: #4B4678;
+}
+
+.nav_container ul li {
+   border-radius: 10px;
+   width: 100%;
+   padding: 15px;
+   border-bottom: 1px solid rgba(0, 0, 0, .05);
+   border-top: 1px solid rgba(0, 0, 0, .05);
+}
+
+.nav_container ul li:hover {
+   background: #594f8d;
+}
+
+.nav_container ul li:hover a {
+   color: white;
+}
+
+.nav_container a {
+   color: #bdb8d7;
+   display: block;
+   text-decoration: none;
+   font-family: sans-serif;
+   font-size: 1.1em;
+}
+
+.navbar .fa {
+   margin-right: 10px;
+}
+
+/* Content */
+
+.main {
+   width: 100%;
+   padding: 20px;
+}
+
+/* Upper container */
+
+.upper_container {
+   width: 85%;
+   background-color: white;
+   border-radius: 5px;
+   padding: 10px;
+   margin-bottom: 25px;
+}
+
+.input_container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.input_label_container {
+   display: flex;
+   align-items: center;
+   width: 60%;
+}
+
+.input_label {
+   margin-right: 30px;
+   font-family: sans-serif;
+   font-size: 1.4em;
+   font-weight: bold;
+   color: #4C4276;
+}
+
+#new_cat_inp {
+   height: 30px;
+   width: 50%;
+   border: 2px solid #4C4276;
+   font-size: 1.2em;
+   padding: 5px;
+   color: #4C4276;
+}
+
+#btn_add {
+   cursor: pointer;
+   transition: all 230ms ease;
+   padding: 10px 20px;
+   font-size: 1.3em;
+   background-color: #ffffff;
+   border-radius: 10px;
+   border-color: #4C4276;
+   color: #4C4276;
+}
+
+#btn_add:hover {
+   color: #fff;
+   background-color: #0a2444;
+   z-index: 10;
+}
+
+#btn_add:hover::after {
+   left: -100%;
+}
+
+/* Table container */
+
+.table_container {
+   width: 85%;
+   background-color: white;
+   border-radius: 5px;
+   padding: 10px;
+}
+
+.cats_table {
+   border-collapse: collapse;
+}
+
+.cats_table td {
+   padding: 20px;
+}
+
+.cat_headings,
+#cat_name {
+   font-size: 1.3em;
+   font-family: sans-serif;
+   color: #4C4276;
+}
+
+.cat_btns {
+   cursor: pointer;
+   transition: all 230ms ease;
+   padding: 10px 20px;
+   font-size: 1.2em;
+   background-color: #ffffff;
+   border-radius: 10px;
+   border: 1px solid #AAD860;
+   color: #4C4276;
+}
+
+.cat_btns:hover {
+   background-color: #AAD860;
+}
+
+.show_btn {
+   font-size: 1.2em;
+   color: #4C4276;
+   text-decoration: none;
+   font-family: sans-serif;
+   padding: 10px 20px;
+   background-color: #fff;
+   border-radius: 10px;
+   border: 1px solid #4C4276;
+   transition: all 230ms ease;
+}
+
+.show_btn:hover {
+   background-color: #4C4276;
+   color: #fff;
+}
