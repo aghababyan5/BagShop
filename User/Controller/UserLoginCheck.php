@@ -12,6 +12,8 @@ if (empty($username) || empty($password)) {
    $_SESSION['message'] = "Есть пустые поля";
    header('location:../UserLogin.php');   
 } else if ($count > 0) {
+   $_SESSION['user_id'] = $count['id'];
+   $_SESSION['user_email'] = $count['email'];
    header('location:../../index.php');
 } else {
    $_SESSION['message'] = 'Неверный логин или пароль';
@@ -23,7 +25,6 @@ if (isset($_POST['inp_check'])) {
    setcookie('user_email', $username['email'], time() + (86400 * 30), '/');
 }
 
-$_SESSION['user_id'] = $count['id'];
-$_SESSION['user_email'] = $count['email'];
+
 
 ?>
